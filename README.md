@@ -8,8 +8,8 @@ The results are very similar probably because I don't know go at all (github cop
 
 ## What it does
 
-- Given an array of objects, it must return all the objects that have the insensitive string in any value inside de object.
-- Must return the object even if the insensitive string is inside a deeply nested object.
+- Given an array of objects, it must return all the objects that have the string in any value inside the object.
+- Must return the object even if the string is inside a deeply nested object, no matter how many levels deep.
 
 ## Results
 
@@ -22,7 +22,7 @@ Both implementations are very similar and using the same dataset with 19547 reco
 
 ## Conclusions
 
-You get the same results in go or js in about the same time. When it's not an insensitive implementation you get different results, go was taking around 6~7ms and js was taking around 23~24ms, in this case go was 3~4 times faster than js.
+You get the same results in go or js in about the same time. When it's not an insensitive implementation you get different results, go was taking around 6\~7ms and js was taking around 23\~24ms, in this case go was 3~4 times faster than js.
 
 I learned a little bit of go, so it's a win for me regardless.
 
@@ -30,7 +30,7 @@ I learned a little bit of go, so it's a win for me regardless.
 
 - Double check both implementations, if you search any genre you get different results, for example `Science Fiction` returns 1473 results in js and 25 in go, it's probably a js quirk where `typeof [] === 'object'`.
 - Get memory usage and cpu usage of both implementations.
-- Create a frontend to query both implementations.
+- Create a backend and frontend to query both implementations.
 - Test with fuzzy search.
 - Test with different data.
 - Try a more manual implementation instead of using the language features.
