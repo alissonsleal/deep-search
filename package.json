@@ -1,0 +1,14 @@
+{
+  "name": "deep-search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Alissonsleal/deep-search.git",
+  "author": "Alisson Leal <alissonsleal@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*"
+    ]
+  }
+}
